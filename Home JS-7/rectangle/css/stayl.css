@@ -1,12 +1,14 @@
 .rectangle-pink {
 	margin-left: 20px;
+	margin-top: 20px;
 	width: 100px;
 	height: 50px;
-	background: pink;
+	background: rgb(255, 192, 236);
 }
 
 .rectangle-orange {
 	margin-left: 20px;
+	margin-top: 20px;
 	width: 100px;
 	height: 50px;
 	background: orange;

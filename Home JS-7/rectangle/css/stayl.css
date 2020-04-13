@@ -1,0 +1,22 @@
+.rectangle-pink {
+	margin-left: 20px;
+	width: 100px;
+	height: 50px;
+	background: pink;
+}
+
+.rectangle-orange {
+	margin-left: 20px;
+	width: 100px;
+	height: 50px;
+	background: orange;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 100vw;
+	height: 100vh;
+}

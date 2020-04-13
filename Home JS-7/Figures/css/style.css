@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .square {
+    width: 200px;
+    height: 200px;
+    background: red;
+  }
+  
+  .circle {
+    background: yellow;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid black;
+  }

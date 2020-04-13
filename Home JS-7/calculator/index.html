@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Калькулятор валюти</h5>
+                        <div class="form-group">
+                            <label>Виберіть вихідну валюту:</label>
+                            <select class="form-control" name="from" id="from">
+                                <option value="0" selected="selected">USD - Доллар США</option>
+                                <option value="1">EUR - Евро</option>
+                                <option value="2">RUB - Російський рубль</option>
+                                <option value="3">PLN - Польський злотий</option>
+                                <option value="4">UAH - Українська гривня</option>
+                                <option value="5">GBR - Британський фунт</option>
+                                <option value="6">BTC - Bitcoin</option>
+                                <option value="7">ETH - Ethereum</option>
+                                <option value="8">XRP - Riple</option>
+                                <option value="9">USDT - Tether</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Введіть суму: </label>
+                            <input name="cash" id="cash" class="form-control" type="text" />
+                        </div>
+                        <div class="form-group">
+                            <label>Виберіть розрахункову валюту: </label>
+                            <select class="form-control" name="to" id="to">
+                                <option value="0">USD - Доллар США</option>
+                                <option value="1">EUR - Евро</option>
+                                <option value="2">RUB - Російський рубль</option>
+                                <option value="3">PLN - Польський злотий</option>
+                                <option value="4" selected="selected">UAH - Українська гривня</option>
+                                <option value="5">GBR - Британський фунт</option>
+                                <option value="6">BTC - Bitcoin</option>
+                                <option value="7">ETH - Ethereum</option>
+                                <option value="8">XRP - Riple</option>
+                                <option value="9">USDT - Tether</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <span id="result" class="result"></span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary" onclick='GiveResult();'>Вирахувати</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>

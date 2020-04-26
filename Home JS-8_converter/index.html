@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Калькулятор валюти</h5>
+                        <div class="form-group">
+                            <label>Виберіть вихідну валюту:</label>
+                            <select class="form-control" name="from" id="from">
+                                <option value="EUR" selected="selected">EUR - Евро</option>
+                                <option value="USD">USD - Доллар США</option>
+                                <option value="RUB">RUB - Російський рубль</option>
+                                <option value="PLN">PLN - Польський злотий</option>
+                                <option value="SEK">SEK - Шведська крона</option>
+                                <option value="GBP">GBP - Британський фунт</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Введіть суму: </label>
+                            <input name="cash" id="cash" class="form-control" type="number" min="0"/>
+                        </div>
+                        <div class="form-group">
+                            <label>Виберіть розрахункову валюту: </label>
+                            <select class="form-control" name="to" id="to">
+                                <option value="EUR">EUR - Евро</option>
+                                <option value="USD">USD - Доллар США</option>
+                                <option value="RUB">RUB - Російський рубль</option>
+                                <option value="PLN">PLN - Польський злотий</option>
+                                <option value="SEK" selected="selected">SEK - Шведська крона</option>
+                                <option value="GBP">GBP - Британський фунт</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <span id="result" class="result"></span>
+                            </label>
+                        </div>
+                        <button class="btn btn-primary" id="convert">Вирахувати</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+
+</html>
